@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="coffeejava.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+
+  <title>Coffee Java Capstone</title>
+  
+</head>
+<body>
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">The Third Place</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Menu</a>
+        <a class="nav-link" href="#">Locations</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Order Now</a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+ <!-- Coffee Image -->
+ <div class="images">
+  <img class="coffee" src="images/pexelscoffee.jpeg" alt="coffee pic">
+  <img class="coffee" src="images/pexelscoffee2.webp" alt="coffee pic">
+  <img class="coffee" src="images/pexelscoffee3.jpeg" alt="coffee pic">
+
+</div>
+
+<!-- Order Here, Full Name and Email -->
+<div class="text">
+  <h1>Order Here!</h1>
+
+  <p>Full Name</p>
+  <form>
+  <input type="text" id="fullName">
+</form>
+<br>
+
+  <p>Email Address</p>
+  <form>
+  <input type="email" id="eMail">
+</form>
+
+  <p class="grey">We'll never share your email with anyone else!</p>
+        <!-- Radio buttons and captions -->
+    <!-- Grid container for radio buttons/choices -->
+    <div class="grid-container">
+        
+
+      <div class="grid-child1">
+          <div class="poison">
+              <h2>What You Feeling?</h2>
+  <!-- Remove classes and labels (bootstrap) -->
+              <label>
+                  <div>
+                      <input id= "coffee1" type="radio" name="coffeeid" value = "coffee">
+                      <label for="coffee1">Coffee</label>
+                    </div>
+                    <div>
+                      <input id= "coffee2"  type="radio" name="coffeeid" value="tea">
+                      <label for="coffee2">Tea</label>
+                    </div>
+                    <div>
+                      <input id= "coffee3" type="radio" name="coffeeid" value ="Americano">
+                      <label for="coffee3" >Americano</label>
+                    </div>
+                    <div>
+                      <input id= "coffee4" type="radio" name="coffeeid" value = "Latte"> 
+                      <label for="coffee4">Latte</label>
+                    </div>
+          </div>
+          </div>
+      
+          <div class="grid-child2">
+              <h2>Shots?</h2>
+              <div>
+                <form id="secondSection"></form>
+                  <input id= "shots1"  type="checkbox" name="shotsid" value="espresso">
+                  <label for="shots1">Extra Espresso</label>
+                </div>
+                <div>
+                  <input id= "shots2" type="checkbox"name="shotsid" value = "pumpkin spice">
+                  <label  for="shots2">Pumpkin Spice</label>
+                </div>
+                <div>
+                  <input id= "shots3" type="checkbox" name="shotsid" value="hazelnut" >
+                  <label for="shots3">Hazelnut</label>
+                </div>
+                <div>
+                  <input id= "shots4" type="checkbox" name="shotsid" value = "caramel"> 
+                  <label for="shots4">Caramel</label>
+                </div>
+          </div>
+
+          <div class="grid-child3">
+            <h2>Any Milk?</h2>
+            <div>
+              <input id= "milk1"  type="radio" name="milkid" value="whole milk">
+              <label for="milk1">Whole Milk</label>
+            </div>
+            <div>
+              <input id= "milk2" type="radio"name="milkid" value = "oat milk">
+              <label  for="milk2">Oat Milk</label>
+            </div>
+            <div>
+              <input id= "milk3" type="radio" name="shotsid" value="almond milk" >
+              <label for="milk3">Almond Milk</label>
+            </div>
+            <div>
+              <input id= "milk4" type="radio" name="milkid" value = "no milk"> 
+              <label for="milk4">No Milk</label>
+            </div>
+            
+              </div>
+              </div>
+
+       
+<br>
+<br>
+
+        <!-- Submit button -->
+        <div class="anything">
+            <h2>Anything Else?</h2>
+
+            <form>
+            <input type="full" id="submitbuttons"></form>
+
+            <button type="submit" name= "finishButton" class="btn btn-secondary" id="submitButton" onclick="submitOrder()">Submit</button>
+        </div>
+
+
+  <script src="coffeejava.js">
+ </script>
+</body>
+</html>

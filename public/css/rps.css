@@ -1,0 +1,50 @@
+.card{
+  background-color: #435585;
+  padding: 10px;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  margin-right: 5em;
+  margin-left: 5em;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 3em;
+  text-decoration: underline;
+  text-align: center;
+  color: whitesmoke;
+}
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  color: whitesmoke;
+}
+
+body {
+    background-color: rgb(35, 30, 112);
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    object-fit: fill;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 30px;
+  
+}
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }

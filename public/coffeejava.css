@@ -1,0 +1,50 @@
+* {
+    background-color: #7D2D00;
+}
+ #navbar {
+    color: white;
+ }
+
+p {
+    color:whitesmoke
+}
+
+.form{
+    background-color: antiquewhite;
+}
+
+img{
+    display: inline;
+    width: 33%;
+}
+
+
+.coffee{
+    height: 30%;
+    /* width: 100vw; */
+    background-size: cover;
+}
+
+.text{
+    color: antiquewhite;
+}
+
+.grey{
+    /* color: gray; */
+    font-size: small;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+
+.grid-child1, .grid-child2, .grid-child3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
